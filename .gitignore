@@ -1,0 +1,43 @@
+# ---- Binarios de Go ----
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ejecutables compilados con `go build` (sin extensión)
+/holamundo
+/main
+/app
+/bin/
+
+# Salida de tests y perfiles
+*.test
+*.out
+*.prof
+coverage.html
+
+# ---- Go build cache local ----
+go-build/
+
+# ---- VS Code ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ---- Sistema ----
+.DS_Store
+Thumbs.db
+
+# ---- Herramientas IA (estado local) ----
+.kilo/
+.copilot/
+.codex/
+.opencode/
+
+# ---- Python (por si acaso mezclas algo) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
