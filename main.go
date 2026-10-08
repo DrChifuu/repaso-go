@@ -3,12 +3,14 @@ package main
 import (
 	"fmt"
 	"pruebago/calcular"
+	methods "pruebago/metodos"
 )
 
 var message string
 var a, b int = 10, 20
 
 func main() {
+
 	fmt.Println("hola mundo")
 
 	message = "esto es un mensaje\n"
@@ -66,23 +68,13 @@ func main() {
 
 	fmt.Println(number_cap2)
 
-	type Genero string
+	p := methods.Personaje{Name: "pepe", HP: 6.7, Gender: methods.Human}
 
-	const (
-		Hombre Genero = "hombre"
-		Mujer  Genero = "mujer"
-		Goblin Genero = "goblin"
-	)
+	p.Describir()
 
-	type Personaje struct {
-		Name   string
-		HP     float32
-		Gender Genero
-	}
+	p.Curar(60)
 
-	p := Personaje{Name: "pepito", HP: 66.7, Gender: "goblin"}
-
-	fmt.Println("EL genero del personaje 'p' es: ", p.Gender)
+	p.Describir()
 
 	pointer := &p.Gender
 
