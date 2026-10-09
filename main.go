@@ -29,8 +29,8 @@ func main() {
 
 	fmt.Println("Suma: ", calcular.Sumar(x, y))
 	fmt.Println("Resta: ", calcular.Restar(x, y))
-	fmt.Println("Multiplicar: ", calcular.Multiplicar(x, y))
-	fmt.Println("Dividir: ", calcular.Dividir(x, y))
+	fmt.Println("Multiplicar: ", calcular.Multiply(x, y))
+	calcular.Dividir(x, y)
 
 	/*
 		uso de len para deteccion de cantidad de elementos de un slice
